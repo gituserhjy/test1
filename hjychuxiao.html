@@ -27,8 +27,8 @@
 <style type="text/css">
 div{
 	position:absolute;
-	padding:500;
-	width:300px;
+	
+	width:100%;
 	text-align:center;
 	
 }
@@ -37,9 +37,11 @@ div{
 }
 p{
 	text-style:heiti;
+	font-size:4em;
 }
 hr{
-	color:rgb(190,190,190)
+	color:rgb(190,190,190);
+	width:100%;
 }
 span{
 	font-style:heiti;
@@ -51,28 +53,28 @@ font{
 #text{
 	font-size:40px;
 }
-hr{
-	width:250px;
-}
 #nowDateTimeSpan{
-	font-size:40px;
+	font-size:3em;
 }
 
 </style>
 </head>
 <body onload="startTime()">
-	<div position=center; marggin=300px;>
+	<div>
 		<p>出校</p>
-		<img alt="" src="1.jpg"><br>
+		<img alt="" src="1.jpg" width="" height=""><br>
 		<span>
-		<p>黄锦熠-201935010114</p>
+		黄锦熠-201935010114
 		</span>
 		<hr />
-		<p>学生：白名单验证通过，该申请离校扫码1次，离校码只能使用一次，请不要重复打开</p>
+		<p>学生：白名单验证通过，<br>
+		该申请离校扫码1次，离校<br>
+		码只能使用一次，请不要<br>
+		重复打开</p>
 		<font color="red">
 		<p id="nowDateTimeSpan"></p>
 		</font>
-		<img src="in.jpg" width="70" height="68">
+		<img src="in.jpg" width="" height="">
 	</div>
 	
 </body>
