@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+<title>进校</title>
+<script>
+			function startTime(){
+				var today = new Date();
+				var hh=today.getHours();
+				var mm=today.getMinutes();
+				var ss=today.getSeconds();
+				var vv=today.getMilliseconds()
+				hh=checkTime(hh);
+				mm=checkTime(mm);
+				ss=checkTime(ss);
+				document.getElementById('nowDateTimeSpan').innerHTML=hh+":"+mm+":"+ss+"."+vv;
+				setTimeout('startTime()',3);//每一秒中重新加载startTime()方法
+			}
+			function checkTime(i)
+	           {
+	               if (i<10){
+	                   i="0" + i;
+	               }
+	                return i;
+	           }
+</script>
+<style type="text/css">
+div{
+	position:absolute;
+	width:100%;
+	text-align:center;
+}
+
+p{
+	font-style:heiti;
+	font-size:2em;
+	margin:1%;
+}
+hr{
+	color:rgb(190,190,190);
+	width:100%;
+}
+.xm{
+	font-style:heiti;
+	font-size:1em;
+	margin:0.1%;
+}
+
+#nowDateTimeSpan{
+	font-size:2em;
+	font-style:heiti;
+}
+
+</style>
+</head>
+<body onload="startTime()">
+	<div>
+		<p>进校</p>
+		<img alt="" src="6.jpg" width="140px" height="190px"><br>
+		<p class="xm">
+		陈智炜-201935010106
+		</p>
+		<hr />
+		<p>白名单验证通过</p>
+		<font color="red">
+		<p id="nowDateTimeSpan"></p>
+		</font>
+		<br>
+		<img src="in.jpg" width="120px" height="120px">
+	</div>
+	
+</body>
+</html>
