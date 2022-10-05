@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>进校</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+<title>出校</title>
 <script>
 			function startTime(){
 				var today = new Date();
@@ -27,55 +28,47 @@
 <style type="text/css">
 div{
 	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
+	width:100%;
 	text-align:center;
-	
 }
-#1{
-	font-size:80px;
-}
+
 p{
-	text-style:heiti;
-}
-hr{
-	color:rgb(190,190,190)
-}
-span{
 	font-style:heiti;
-	font-size:10px;
-}
-font{
-	font-size:20px;
-}
-#text{
-	font-size:40px;
+	font-size:2em;
+	margin:1%;
 }
 hr{
-	width:250px;
+	color:rgb(190,190,190);
+	width:100%;
 }
+.xm{
+	font-style:heiti;
+	font-size:1em;
+	margin:0.1%;
+}
+
 #nowDateTimeSpan{
-	font-size:40px;
+	font-size:2em;
+	font-style:heiti;
 }
+
 </style>
 </head>
-<body>
-	<body onload="startTime()">
-	<div position=center; padding=50px;>
-		<p>进校</p>
-		<img alt="" src="2.jpg"><br>
-		<span>
-		<p>罗洁婷-201940020227</p>
-		</span>
+<body onload="startTime()">
+	<div>
+		<p>出校</p>
+		<img alt="" src="2.jpg" width="140px" height="190px"><br>
+		<p class="xm">
+		罗洁婷-201940020227
+		</p>
 		<hr />
-		<p id="text">白名单验证通过</p>
+		<p>白名单验证通过</p>
 		<font color="red">
 		<p id="nowDateTimeSpan"></p>
 		</font>
-		<img src="in.jpg" width="70" height="68">
+		<br>
+		<img src="in.jpg" width="120px" height="120px">
 	</div>
+	
 </body>
 </html>
